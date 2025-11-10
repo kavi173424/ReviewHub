@@ -22,7 +22,7 @@ namespace OrchestrationAPI.Controllers
         [HttpPost("fetch")]
         public IActionResult FetchReview([FromBody] ReviewRequestModel request)
         {
-            // 1️⃣ Validate input
+            // 1️⃣ Validate input functonality
             var validationResult = _validator.Validate(request);
             if (!validationResult.IsValid)
             {
